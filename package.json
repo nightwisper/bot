@@ -1,0 +1,24 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "lint": "npx eslint --fix src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.2",
+    "dotenv": "^7.0.0",
+    "eslint": "^5.15.3",
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
