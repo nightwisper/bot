@@ -23,7 +23,7 @@ class Parser {
             }
             message = message.split(" ");
             return {
-                command: message[0].substring(this.tokenLength-1, message[0].length),
+                command: message[0].substring(this.tokenLength, message[0].length),
                 parameters: message.slice(1, message.length)
             };
 
