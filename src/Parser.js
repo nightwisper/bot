@@ -18,7 +18,7 @@ class Parser {
      */
     getCommand(message) {
         try {
-            if(message.substring(0,this.tokenLength) !== this.token){
+            if(!message || message.substring(0,this.tokenLength) !== this.token){
                 throw "Message is not a command";
             }
             message = message.split(" ");
