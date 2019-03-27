@@ -29,7 +29,7 @@ describe("Testing command parsing", () => {
 
     describe("Not a command", () => {
         it("Should return undefined", () => {
-            assert.equal(parser.getCommand("test"), undefined);
+            assert.equal(parser.getCommand("test"), false);
         });
     });
 });

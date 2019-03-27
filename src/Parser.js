@@ -29,7 +29,7 @@ class Parser {
 
         } catch (error) {
             console.log(error);
-            return;
+            return false;
         }
     }
 }

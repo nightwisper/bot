@@ -2,8 +2,9 @@ import "dotenv/config";
 
 import Discord from "discord.js";
 import Parser from "./Parser";
+import CmdHandler from "./CmdHandler";
 
-const parser = new Parser(process.env.TOKEN);
+const handler = new CmdHandler(new Parser(process.env.TOKEN));
 
 const client = new Discord.Client();
 
@@ -12,8 +13,8 @@ client.on("ready", () => {
 });
 
 client.on("message", msg => {
-    var command = parser.getCommand(msg.content);
-    console.log(command);
+    if(msg.author.bot) return;
+    handler.execute(msg);
 });
 
 client.login(process.env.API_KEY);
