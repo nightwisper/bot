@@ -1,4 +1,5 @@
 # Just another discord bot
+[![Build Status](https://travis-ci.org/nightwisper/bot.svg?branch=master)](https://travis-ci.org/nightwisper/bot)
 
 This is just another discord bot using the discord.js library.
 
